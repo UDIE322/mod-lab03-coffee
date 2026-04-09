@@ -1,10 +1,11 @@
+// Copyright 2020 GHA Test Team
 #include "../include/Automata.h"
 #include <iostream>
 
 int main() {
     Automata a;
     setlocale(LC_ALL, "Russian");
-    // Включение автомата
+    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     a.on();
     a.getMenu();
 
