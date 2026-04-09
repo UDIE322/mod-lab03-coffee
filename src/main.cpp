@@ -1,36 +1,36 @@
 // Copyright 2020 GHA Test Team
-#include "../include/Automata.h"
+
+#include <clocale>
 #include <iostream>
+
+#include "../include/Automata.h"
 
 int main() {
     Automata a;
     setlocale(LC_ALL, "Russian");
-    // ��������� ��������
     a.on();
     a.getMenu();
 
     std::cout << "\nnot enought\n";
     a.coin(50);
-    a.choice(1); // Coffee = 70
+    a.choice(1);  // Coffee = 70
 
     if (a.check()) {
         a.cook();
         a.finish();
-    }
-    else {
+    } else {
         a.cancel();
     }
 
     std::cout << "\n---scs---\n";
     a.coin(50);
     a.coin(20);
-    a.choice(2); 
+    a.choice(2);
 
     if (a.check()) {
         a.cook();
         a.finish();
-    }
-    else {
+    } else {
         a.cancel();
     }
 

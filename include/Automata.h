@@ -1,5 +1,7 @@
 // Copyright 2020 GHA Test Team
-#pragma once 
+
+#pragma once
+
 #include <string>
 
 enum STATES {
@@ -11,14 +13,14 @@ enum STATES {
 };
 
 class Automata {
-private:
+ private:
     int cash;
     std::string menu[3];
     int prices[3];
     int selected;
     STATES state;
 
-public:
+ public:
     Automata();
 
     void on();

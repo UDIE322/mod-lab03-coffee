@@ -1,6 +1,8 @@
 // Copyright 2020 GHA Test Team
-#include "../include/Automata.h"
+
 #include <iostream>
+
+#include "../include/Automata.h"
 
 Automata::Automata() {
     cash = 0;
@@ -60,9 +62,8 @@ void Automata::choice(int index) {
 bool Automata::check() {
     if (state == CHECK) {
         if (cash >= prices[selected]) {
-            return true; 
-        }
-        else {
+            return true;
+        } else {
             std::cout << "Not enough money\n";
             return false;
         }
